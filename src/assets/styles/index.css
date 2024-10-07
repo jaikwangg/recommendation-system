@@ -1,0 +1,86 @@
+:root {
+  /* Add a constant color for paragraphs */
+  --text-color: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease;
+  background-color: var(--background);
+}
+
+/* Explicitly set paragraph color */
+p {
+  color: var(--text-color) !important;
+  margin: 0; /* Reset default margins */
+}
+
+/* Light theme variables */
+.light-mode {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222.2, 84%, 4.9%);
+  --primary: hsl(222.2, 47.4%, 11.2%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: #D9D9D9;
+  --secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+  --muted: hsl(210, 40%, 96.1%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --accent: hsl(210, 40%, 96.1%);
+  --accent-foreground: hsl(222.2, 47.4%, 11.2%);
+  
+  /* Add any additional light theme colors you need */
+}
+
+/* Dark theme variables */
+.dark-mode {
+  --background: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --primary: hsl(210, 40%, 98%);
+  --primary-foreground: hsl(222.2, 47.4%, 11.2%);
+  --secondary: hsl(217.2, 32.6%, 17.5%);
+  --secondary-foreground: #D9D9D9;
+  --muted: hsl(217.2, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --accent: hsl(217.2, 32.6%, 17.5%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  
+  /* Add any additional dark theme colors you need */
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.sidebar h1,
+.sidebar h2,
+.mobile-header h1,
+.mobile-menu h2 {
+  color: var(--foreground) !important; /* Using !important as a last resort */
+  transition: color 0.3s ease;
+}
+
+/* Link styles within headings */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: var(--background);
+  color: var(--foreground);
+}

@@ -1,0 +1,26 @@
+.recommendation-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.recommendation-container img {
+    width: 200px;
+    /* Set a fixed width */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image maintains its aspect ratio */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a subtle shadow */
+}
+
+.recommendation-container a {
+    display: block;
+    text-align: center;
+}

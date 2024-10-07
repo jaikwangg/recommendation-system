@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-style: italic;
+  max-width: 72%;
+  height: 80vh;
+  margin-left: auto;
+  overflow: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.home-page {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.search-bar-container {
+  width: 22%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.search-results-container {
+  min-width: 200px;
+  padding-left: 30px;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 90%;
+  z-index: 20;
+}
+
+.button-group-container {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.grid {
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.card-title {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
